@@ -17,9 +17,15 @@ class Navigation extends React.Component {
             <nav className="navbar navbar-default">
                 <div className="container-fluid">
                     <div className="navbar-header">
+                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#basic-nav">
+                            <span className="sr-only">Toggle navigation</span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                        </button>
                         <a className="navbar-brand" href="#">Arkansassy Designs</a>
                     </div>
-                    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div className="collapse navbar-collapse" id="basic-nav">
                         <ul className="nav navbar-nav">
                             <li className="active"><a href="#">Products <span className="sr-only">(current)</span></a></li>
                         </ul>

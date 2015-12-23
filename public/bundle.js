@@ -24129,6 +24129,18 @@
 	                        'div',
 	                        { className: 'navbar-header' },
 	                        _react2.default.createElement(
+	                            'button',
+	                            { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#basic-nav' },
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'sr-only' },
+	                                'Toggle navigation'
+	                            ),
+	                            _react2.default.createElement('span', { className: 'icon-bar' }),
+	                            _react2.default.createElement('span', { className: 'icon-bar' }),
+	                            _react2.default.createElement('span', { className: 'icon-bar' })
+	                        ),
+	                        _react2.default.createElement(
 	                            'a',
 	                            { className: 'navbar-brand', href: '#' },
 	                            'Arkansassy Designs'
@@ -24136,7 +24148,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
+	                        { className: 'collapse navbar-collapse', id: 'basic-nav' },
 	                        _react2.default.createElement(
 	                            'ul',
 	                            { className: 'nav navbar-nav' },
@@ -24306,23 +24318,23 @@
 
 	            return _react2.default.createElement(
 	                'div',
-	                null,
+	                { className: 'row' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'row' },
+	                    { className: 'col-md-4' },
 	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'col-md-4' },
-	                        _react2.default.createElement(
-	                            'h3',
-	                            null,
-	                            'Santa Baby...'
-	                        ),
-	                        _react2.default.createElement('img', { src: './images/for-santa.jpg', alt: 'Santa Baby' })
+	                        'h3',
+	                        null,
+	                        'Santa Baby...'
 	                    ),
+	                    _react2.default.createElement('img', { src: './images/for-santa.jpg', alt: 'Santa Baby' })
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'col-md-8' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'col-md-4' },
+	                        { className: 'col-md-6' },
 	                        _react2.default.createElement(
 	                            'h3',
 	                            null,
@@ -24336,7 +24348,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'col-md-4' },
+	                        { className: 'col-md-6' },
 	                        _react2.default.createElement(
 	                            'h3',
 	                            null,
@@ -24352,22 +24364,22 @@
 	                            { href: 'http://etsy.com', target: '_blank', className: 'btn btn-primary', role: 'button' },
 	                            'Buy Now on Etsy'
 	                        )
-	                    )
-	                ),
-	                _react2.default.createElement('hr', null),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'row' },
+	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'col-md-4' },
-	                        _react2.default.createElement(_Comments2.default, {
-	                            productName: this.props.params.productName,
-	                            comments: this.state.comments,
-	                            addComment: function addComment(newComment) {
-	                                return _this2.handleAddComment(newComment);
-	                            }
-	                        })
+	                        { className: 'row' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-md-12' },
+	                            _react2.default.createElement('hr', null),
+	                            _react2.default.createElement(_Comments2.default, {
+	                                productName: this.props.params.productName,
+	                                comments: this.state.comments,
+	                                addComment: function addComment(newComment) {
+	                                    return _this2.handleAddComment(newComment);
+	                                }
+	                            })
+	                        )
 	                    )
 	                )
 	            );
@@ -25194,8 +25206,7 @@
 	        _react2.default.createElement(
 	            'h3',
 	            null,
-	            'Comments for ',
-	            productName
+	            'Comments'
 	        ),
 	        _react2.default.createElement(_AddComment2.default, { productName: productName, addComment: addComment }),
 	        _react2.default.createElement(_CommentsList2.default, { comments: comments })

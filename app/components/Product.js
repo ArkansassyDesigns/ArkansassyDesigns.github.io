@@ -42,30 +42,30 @@ class Product extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="row">
-                    <div className="col-md-4">
-                        <h3>Santa Baby...</h3>
-                        <img src="./images/for-santa.jpg" alt="Santa Baby" />
-                    </div>
-                    <div className="col-md-4">
+            <div className="row">
+                <div className="col-md-4">
+                    <h3>Santa Baby...</h3>
+                    <img src="./images/for-santa.jpg" alt="Santa Baby" />
+                </div>
+                <div className="col-md-8">
+                    <div className="col-md-6">
                         <h3>For Santa Collection</h3>
                         <p>Coffee Mug and Plate - For Santa's milk and cookies on Christmas Eve</p>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-6">
                         <h3>Cost Per Item: $25.00</h3>
                         <p>Estimated Time to Prepare: 3 Days</p>
                         <a href="http://etsy.com" target="_blank" className="btn btn-primary" role="button">Buy Now on Etsy</a>
                     </div>
-                </div>
-                <hr />
-                <div className="row">
-                    <div className="col-md-4">
-                        <Comments
-                            productName={this.props.params.productName}
-                            comments={this.state.comments}
-                            addComment={(newComment) => this.handleAddComment(newComment)}
-                        />
+                    <div className="row">
+                        <div className="col-md-12">
+                            <hr />
+                            <Comments
+                                productName={this.props.params.productName}
+                                comments={this.state.comments}
+                                addComment={(newComment) => this.handleAddComment(newComment)}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

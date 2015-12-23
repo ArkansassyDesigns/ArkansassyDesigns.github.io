@@ -5,7 +5,7 @@ import AddComment from './AddComment'
 const Comments = ({productName, comments, addComment}) => {
     return (
         <div>
-            <h3>Comments for {productName}</h3>
+            <h3>Comments</h3>
             <AddComment productName={productName} addComment={addComment}/>
             <CommentsList comments={comments}/>
         </div>
