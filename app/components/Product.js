@@ -54,7 +54,7 @@ class Product extends React.Component {
                     <div className="col-md-6">
                         <h3>Cost Per Item: $25.00</h3>
                         <p>Estimated Time to Prepare: 3 Days</p>
-                        <a href="http://etsy.com" target="_blank" className="btn btn-primary" role="button">Buy Now on Etsy</a>
+                        <a href="https://www.etsy.com/shop/ArkansassyDesigns" target="_blank" className="btn btn-primary" role="button">Buy Now on Etsy</a>
                     </div>
                     <div className="row">
                         <div className="col-md-12">

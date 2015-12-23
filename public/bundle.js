@@ -24144,11 +24144,7 @@
 	                            _react2.default.createElement('span', { className: 'icon-bar' }),
 	                            _react2.default.createElement('span', { className: 'icon-bar' })
 	                        ),
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: '#' },
-	                            _react2.default.createElement('img', { className: 'img-responsive', src: './public/images/logo.png', alt: 'Click for more info...' })
-	                        )
+	                        _react2.default.createElement('img', { className: 'img-responsive', src: './public/images/logo.png', alt: 'Click for more info...' })
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
@@ -24648,7 +24644,7 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'a',
-	                            { href: 'http://etsy.com', target: '_blank', className: 'btn btn-primary', role: 'button' },
+	                            { href: 'https://www.etsy.com/shop/ArkansassyDesigns', target: '_blank', className: 'btn btn-primary', role: 'button' },
 	                            'Buy Now on Etsy'
 	                        )
 	                    ),

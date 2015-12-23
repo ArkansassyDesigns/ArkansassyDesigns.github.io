@@ -23,7 +23,7 @@ class Navigation extends React.Component {
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
-                        <a href="#"><img className="img-responsive" src="./public/images/logo.png" alt="Click for more info..." /></a>
+                        <img className="img-responsive" src="./public/images/logo.png" alt="Click for more info..." />
                     </div>
                     <div className="collapse navbar-collapse" id="basic-nav">
                         <form className="navbar-form navbar-right" role="search" onSubmit={() => this.handleSubmit()}>
