@@ -23,15 +23,12 @@ class Navigation extends React.Component {
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
-                        <a className="navbar-brand" href="#">Arkansassy Designs</a>
+                        <a href="#"><img className="img-responsive" src="./public/images/logo.png" alt="Click for more info..." /></a>
                     </div>
                     <div className="collapse navbar-collapse" id="basic-nav">
-                        <ul className="nav navbar-nav">
-                            <li className="active"><a href="#">Products <span className="sr-only">(current)</span></a></li>
-                        </ul>
                         <form className="navbar-form navbar-right" role="search" onSubmit={() => this.handleSubmit()}>
                             <div className="form-group">
-                                <input type="text" className="form-control" placeholder="Search" style={{marginRight: 10}} ref={(ref) => this.getRef(ref)} />
+                                <input type="text" className="form-control" placeholder="Type something fun..." style={{marginRight: 10}} ref={(ref) => this.getRef(ref)} />
                             </div>
                             <button type="submit" className="btn btn-primary">Search Products</button>
                         </form>

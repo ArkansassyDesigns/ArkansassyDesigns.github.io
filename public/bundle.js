@@ -24021,10 +24021,14 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createElement(
-	    _reactRouter.Route,
-	    { path: '/', component: _Main2.default },
-	    _react2.default.createElement(_reactRouter.Route, { path: 'product/:productName', component: _Product2.default }),
-	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default })
+	    _reactRouter2.default,
+	    null,
+	    _react2.default.createElement(
+	        _reactRouter.Route,
+	        { path: '/', component: _Main2.default },
+	        _react2.default.createElement(_reactRouter.Route, { path: 'product/:productName', component: _Product2.default }),
+	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default })
+	    )
 	);
 
 /***/ },
@@ -24142,31 +24146,13 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'a',
-	                            { className: 'navbar-brand', href: '#' },
-	                            'Arkansassy Designs'
+	                            { href: '#' },
+	                            _react2.default.createElement('img', { className: 'img-responsive', src: './public/images/logo.png', alt: 'Click for more info...' })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'collapse navbar-collapse', id: 'basic-nav' },
-	                        _react2.default.createElement(
-	                            'ul',
-	                            { className: 'nav navbar-nav' },
-	                            _react2.default.createElement(
-	                                'li',
-	                                { className: 'active' },
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    { href: '#' },
-	                                    'Products ',
-	                                    _react2.default.createElement(
-	                                        'span',
-	                                        { className: 'sr-only' },
-	                                        '(current)'
-	                                    )
-	                                )
-	                            )
-	                        ),
 	                        _react2.default.createElement(
 	                            'form',
 	                            { className: 'navbar-form navbar-right', role: 'search', onSubmit: function onSubmit() {
@@ -24175,7 +24161,7 @@
 	                            _react2.default.createElement(
 	                                'div',
 	                                { className: 'form-group' },
-	                                _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Search', style: { marginRight: 10 }, ref: function ref(_ref) {
+	                                _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Type something fun...', style: { marginRight: 10 }, ref: function ref(_ref) {
 	                                        return _this2.getRef(_ref);
 	                                    } })
 	                            ),
@@ -24222,9 +24208,311 @@
 	    _objectDestructuringEmpty(_ref);
 
 	    return _react2.default.createElement(
-	        "h2",
-	        { className: "text-center" },
-	        "Search by Product Name"
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	            "h2",
+	            { className: "text-center" },
+	            "Are You Arkansassy?"
+	        ),
+	        _react2.default.createElement("hr", null),
+	        _react2.default.createElement(
+	            "div",
+	            { className: "col-lg-3 col-md-4 col-sm-6 col-xs-12" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "hovereffect product" },
+	                _react2.default.createElement("img", { className: "img-responsive", src: "./public/images/for-santa.jpg", alt: "Click for more info..." }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "overlay" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        null,
+	                        "Santa Baby..."
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "?#/product/santa" },
+	                            "View Product"
+	                        )
+	                    )
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            "div",
+	            { className: "col-lg-3 col-md-4 col-sm-6 col-xs-12" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "hovereffect product" },
+	                _react2.default.createElement("img", { className: "img-responsive", src: "./public/images/mrs-bowl.jpg", alt: "Click for more info..." }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "overlay" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        null,
+	                        "Mrs. Bowl"
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "?#/product/santa" },
+	                            "View Product"
+	                        )
+	                    )
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            "div",
+	            { className: "col-lg-3 col-md-4 col-sm-6 col-xs-12" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "hovereffect product" },
+	                _react2.default.createElement("img", { className: "img-responsive", src: "./public/images/mrs-dipping-bowl.jpg", alt: "Click for more info..." }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "overlay" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        null,
+	                        "Mrs. Dipper"
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "?#/product/santa" },
+	                            "View Product"
+	                        )
+	                    )
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            "div",
+	            { className: "col-lg-3 col-md-4 col-sm-6 col-xs-12" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "hovereffect product" },
+	                _react2.default.createElement("img", { className: "img-responsive", src: "./public/images/cats-are-assholes.jpg", alt: "Click for more info..." }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "overlay" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        null,
+	                        "Cats Are Dicks"
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "?#/product/santa" },
+	                            "View Product"
+	                        )
+	                    )
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            "div",
+	            { className: "col-lg-3 col-md-4 col-sm-6 col-xs-12" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "hovereffect product" },
+	                _react2.default.createElement("img", { className: "img-responsive", src: "./public/images/blame-it-all-on-my-roots.jpg", alt: "Click for more info..." }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "overlay" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        null,
+	                        "Blame The Boots Roots"
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "?#/product/santa" },
+	                            "View Product"
+	                        )
+	                    )
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            "div",
+	            { className: "col-lg-3 col-md-4 col-sm-6 col-xs-12" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "hovereffect product" },
+	                _react2.default.createElement("img", { className: "img-responsive", src: "http://placehold.it/343x610", alt: "" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "overlay" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        null,
+	                        "Placeholder"
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#" },
+	                            "View Product"
+	                        )
+	                    )
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            "div",
+	            { className: "col-lg-3 col-md-4 col-sm-6 col-xs-12" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "hovereffect product" },
+	                _react2.default.createElement("img", { className: "img-responsive", src: "http://placehold.it/343x610", alt: "" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "overlay" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        null,
+	                        "Placeholder"
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#" },
+	                            "View Product"
+	                        )
+	                    )
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            "div",
+	            { className: "col-lg-3 col-md-4 col-sm-6 col-xs-12" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "hovereffect product" },
+	                _react2.default.createElement("img", { className: "img-responsive", src: "http://placehold.it/343x610", alt: "" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "overlay" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        null,
+	                        "Placeholder"
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#" },
+	                            "View Product"
+	                        )
+	                    )
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            "div",
+	            { className: "col-lg-3 col-md-4 col-sm-6 col-xs-12" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "hovereffect product" },
+	                _react2.default.createElement("img", { className: "img-responsive", src: "http://placehold.it/343x610", alt: "" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "overlay" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        null,
+	                        "Placeholder"
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#" },
+	                            "View Product"
+	                        )
+	                    )
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            "div",
+	            { className: "col-lg-3 col-md-4 col-sm-6 col-xs-12" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "hovereffect product" },
+	                _react2.default.createElement("img", { className: "img-responsive", src: "http://placehold.it/343x610", alt: "" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "overlay" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        null,
+	                        "Placeholder"
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#" },
+	                            "View Product"
+	                        )
+	                    )
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            "div",
+	            { className: "col-lg-3 col-md-4 col-sm-6 col-xs-12" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "hovereffect product" },
+	                _react2.default.createElement("img", { className: "img-responsive", src: "http://placehold.it/343x610", alt: "" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "overlay" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        null,
+	                        "Placeholder"
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#" },
+	                            "View Product"
+	                        )
+	                    )
+	                )
+	            )
+	        )
 	    );
 	};
 
@@ -24306,7 +24594,6 @@
 	    }, {
 	        key: 'handleAddComment',
 	        value: function handleAddComment(newComment) {
-	            console.log(newComment);
 	            base.post(this.props.params.productName, {
 	                data: this.state.comments.concat([newComment])
 	            });
@@ -24327,7 +24614,7 @@
 	                        null,
 	                        'Santa Baby...'
 	                    ),
-	                    _react2.default.createElement('img', { src: './images/for-santa.jpg', alt: 'Santa Baby' })
+	                    _react2.default.createElement('img', { src: './public/images/for-santa.jpg', alt: 'Santa Baby' })
 	                ),
 	                _react2.default.createElement(
 	                    'div',
@@ -25297,8 +25584,10 @@
 	        key: 'handleSubmit',
 	        value: function handleSubmit() {
 	            var newComment = this.comment.value;
-	            this.comment.value = '';
-	            this.props.addComment(newComment);
+	            if (newComment != null && newComment != '' && newComment != ' ') {
+	                this.comment.value = '';
+	                this.props.addComment(newComment);
+	            }
 	        }
 	    }, {
 	        key: 'render',

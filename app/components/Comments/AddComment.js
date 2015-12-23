@@ -2,13 +2,16 @@ import React from 'react'
 
 class AddComment extends React.Component {
     setRef(ref) {
-        this.comment = ref;
+        this.comment = ref
     }
 
     handleSubmit() {
-        var newComment = this.comment.value;
-        this.comment.value = '';
-        this.props.addComment(newComment);
+        var newComment = this.comment.value
+        if (newComment != null && newComment != '' && newComment != ' ')
+        {
+            this.comment.value = ''
+            this.props.addComment(newComment)
+        }
     }
 
     render() {

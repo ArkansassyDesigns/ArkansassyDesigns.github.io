@@ -34,7 +34,6 @@ class Product extends React.Component {
     }
 
     handleAddComment(newComment) {
-        console.log(newComment)
         base.post(this.props.params.productName, {
             data: this.state.comments.concat([newComment])
         })
@@ -45,7 +44,7 @@ class Product extends React.Component {
             <div className="row">
                 <div className="col-md-4">
                     <h3>Santa Baby...</h3>
-                    <img src="./images/for-santa.jpg" alt="Santa Baby" />
+                    <img src="./public/images/for-santa.jpg" alt="Santa Baby" />
                 </div>
                 <div className="col-md-8">
                     <div className="col-md-6">

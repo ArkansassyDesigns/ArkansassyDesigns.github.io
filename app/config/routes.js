@@ -6,8 +6,10 @@ import Router from 'react-router'
 import { Route, IndexRoute } from 'react-router'
 
 export default (
-    <Route path="/" component={Main}>
-        <Route path="product/:productName" component={Product} />
-        <IndexRoute component={Home} />
-    </Route>
+    <Router>
+        <Route path="/" component={Main}>
+            <Route path="product/:productName" component={Product} />
+            <IndexRoute component={Home} />
+        </Route>
+    </Router>
 )
