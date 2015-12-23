@@ -2,7 +2,7 @@ import React from 'react'
 import Rebase from 're-base'
 import Comments from './Comments/Comments'
 
-const base = Rebase.createClass('https://react-note.firebaseio.com/')
+const base = Rebase.createClass('https://arkansassydesigns.firebaseio.com/')
 
 class Product extends React.Component {
     constructor(props) {
@@ -26,7 +26,7 @@ class Product extends React.Component {
     }
 
     init(productName) {
-        this.ref = base.bindToState(this.props.params.productName, {
+        this.ref = base.bindToState(productName, {
             context: this,
             asArray: true,
             state: 'comments'
